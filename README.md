@@ -1,41 +1,19 @@
-## Tetris-Clone-Game
-This is my work with **Unity** to create a clone of the **Tetris** game.
+## Zigzag-Clone-GAme
+Bu çalışma **Unity** ile **Zigzag** oyununun bir kopyasını oluşturmak için yaptığım çalışmadır.
 
-## Mechanical
-  * Grid movement
-    * With arrow keys or touches 
-  * Line 
-    * When Shapes are placed in a line, the line is cleared
-    
-## UI
-  * Main menu
-    * Play
-    * Settings
-      * Music
-      * Sound
-  * In-game menu
-    * Holder Panel
-      * Spahe Change Button  
-    * Next Panel
-      * Next Shape
-    * Buttons Panel
-      * Music
-      * Rotate
-      * Sound   
-    * Score Panel
-      * Score Text   
-    * Results Panel
-      * Lines Text
-      * Level Text  
-    * Pause Panel
-      * Continue
-      * Restart
-      * Drag Distance
-      * Touch Distance
-      * Touch Speed
+## Mekanikler
+  * Top hareketi
+    * Oyunucunun touch veya mouse click işlemleri topa yön verebilir.
+    * Sağa giden topu sola,
+    * Sola giden topu sağa yönde hareket ettirebiliriz.
+  * Zemin Hareketleri
+    * OnCollisionExit metodu ile top'a verdiğimiz "top" tagı sayesinde zeminlerden çıkan toptan 0.75f sonra zeminlerin düşme efektini gerçekleştiriyoruz.
+    * Düşen zemin objeleri en son zemin objesinin arkasına ekleniyor.
+    * Zemin objelerin eklenme şekli random bir şekilde sol ya da sağına ekleniyor.
+  * Oyuna tekrar başlamak için topumuzun zeminden y ekseninde 10 birim aşağıya düşmesi gerekiyor.
 
 ## Gameplay
-Main Menu Scene | Game Scene
------------- | ------------- 
-![](VideosAndPhotos/TetrisKlip1.gif) | ![](VideosAndPhotos/TetrisKlip2.gif)
+Game Scene |
+------------ | 
+![](VideosAndPhotos/zigzagKlip.gif) |
 
