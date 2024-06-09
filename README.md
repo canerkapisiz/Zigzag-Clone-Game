@@ -1,4 +1,4 @@
-## Zigzag-Clone-GAme
+## Zigzag-Clone-Game
 Bu çalışma **Unity** ile **Zigzag** oyununun bir kopyasını oluşturmak için yaptığım çalışmadır.
 
 ## Mekanikler
